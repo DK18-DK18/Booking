@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enterprise Management System</title>
+
+    <meta name="description" content="Enterprise management dashboard for administration, finance, reports, imports and exports.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="app-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">
+                <i data-lucide="settings"></i>
+            </div>
+            <span>ENTERPRISE</span>
+        </div>
+
+        <nav class="navigation">
+
+            <p class="nav-heading">MAIN MENU</p>
+
+            <a href="#" class="nav-item active" data-page="Setup">
+                <i data-lucide="settings"></i>
+                <span>Setup</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="Admin">
+                <i data-lucide="clipboard-list"></i>
+                <span>Admin</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="Export">
+                <i data-lucide="file-up"></i>
+                <span>Export</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="Import">
+                <i data-lucide="file-down"></i>
+                <span>Import</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="Report">
+                <i data-lucide="file-chart-column"></i>
+                <span>Report</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="Custom">
+                <i data-lucide="globe"></i>
+                <span>Custom</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="Finance">
+                <i data-lucide="wallet"></i>
+                <span>Finance</span>
+            </a>
+
+            <a href="#" class="nav-item" data-page="AGS">
+                <i data-lucide="truck"></i>
+                <span>AGS</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-mini">
+                <div class="mini-avatar">AD</div>
+                <div>
+                    <strong>Administrator</strong>
+                    <small>System Admin</small>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP HEADER -->
+        <header class="topbar">
+
+            <div class="header-left">
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+
+                <div>
+                    <h2 id="headerTitle">Setup</h2>
+                    <p>Enterprise Management System</p>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <div class="search-box">
+                    <i data-lucide="search"></i>
+                    <input
+                        type="search"
+                        id="globalSearch"
+                        placeholder="Search modules..."
+                    >
+                </div>
+
+                <button class="icon-button" id="notificationBtn" aria-label="Notifications">
+                    <i data-lucide="bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="profile">
+                    <div class="avatar">AD</div>
+                    <div class="profile-details">
+                        <strong>Administrator</strong>
+                        <small>Super Admin</small>
+                    </div>
+                    <i data-lucide="chevron-down"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <section class="page-content">
+
+            <div class="breadcrumb">
+                <span>Home</span>
+                <i data-lucide="chevron-right"></i>
+                <strong id="breadcrumbTitle">Setup</strong>
+            </div>
+
+            <div id="pageView">
+
+                <!-- DASHBOARD CONTENT IS CREATED BY JAVASCRIPT -->
+
+            </div>
+
+            <footer class="footer">
+                <span>© 2026 Enterprise Management System</span>
+                <span>Version 1.0.0</span>
+            </footer>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
